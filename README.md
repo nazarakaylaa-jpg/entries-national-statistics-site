@@ -2,6 +2,10 @@
 
 <!-- SPDX-License-Identifier: MIT -->
 
+[![make.fun · best-national-statistics-site-20261126-0539](https://make.fun/badge/best-national-statistics-site-20261126-0539.svg)](https://make.fun/bounty/best-national-statistics-site-20261126-0539?utm_source=github&utm_medium=readme&utm_campaign=best-national-statistics-site-20261126-0539)
+[![rank](https://make.fun/badge/best-national-statistics-site-20261126-0539/nazarakaylaa-jpg/entries-national-statistics-site/rank.svg)](https://make.fun/bounty/best-national-statistics-site-20261126-0539/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=best-national-statistics-site-20261126-0539)
+[![reward](https://make.fun/badge/best-national-statistics-site-20261126-0539/nazarakaylaa-jpg/entries-national-statistics-site/reward.svg)](https://make.fun/bounty/best-national-statistics-site-20261126-0539?utm_source=github&utm_medium=readme&utm_campaign=best-national-statistics-site-20261126-0539)
+
 Portal statistik nasional Indonesia: penduduk, ekonomi, wilayah, dan
 kesejahteraan — angka resmi terbaru dari BPS dan Bank Dunia, lengkap dengan
 sumber dan tahunnya. Situs statis murni (HTML + CSS + JavaScript tanpa
