@@ -1,0 +1,133 @@
+/* NusaData — gaya situs. Palet: teal gelap + amber, latar terang, kontras tinggi. */
+:root {
+  --ink: #0f172a;
+  --muted: #475569;
+  --faint: #64748b;
+  --line: #e2e8f0;
+  --teal: #0f766e;
+  --teal-dark: #115e59;
+  --amber: #b45309;
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --radius: 14px;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.55;
+}
+.wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+a { color: var(--teal); }
+h1 { font-size: 2.4rem; line-height: 1.12; margin: 0.2em 0 0.35em; letter-spacing: -0.02em; }
+h2 { font-size: 1.25rem; margin: 0 0 0.3em; letter-spacing: -0.01em; }
+p { margin: 0.4em 0 0.9em; }
+
+/* Header */
+.site-header { background: #0b3b3a; position: sticky; top: 0; z-index: 10; }
+.header-inner { display: flex; align-items: center; gap: 24px; min-height: 56px; flex-wrap: wrap; padding-top: 6px; padding-bottom: 6px; }
+.brand { color: #fff; font-weight: 800; font-size: 1.3rem; text-decoration: none; letter-spacing: -0.01em; }
+.brand-mark { color: #fbbf24; }
+#main-nav { display: flex; gap: 4px; flex-wrap: wrap; }
+#main-nav a {
+  color: #cbd5e1; text-decoration: none; font-size: 0.92rem; font-weight: 600;
+  padding: 6px 10px; border-radius: 8px;
+}
+#main-nav a:hover { color: #fff; background: rgba(255, 255, 255, 0.12); }
+#main-nav a[aria-current="page"] { color: #fff; background: var(--teal); }
+
+/* Hero dan kepala halaman */
+.hero { padding: 40px 0 8px; }
+.page-head { padding: 32px 0 4px; }
+.eyebrow {
+  text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.78rem;
+  font-weight: 700; color: var(--teal); margin: 0 0 6px;
+}
+.lede { font-size: 1.12rem; color: var(--muted); max-width: 720px; }
+.hero-links { display: flex; gap: 10px; flex-wrap: wrap; margin: 18px 0 26px; }
+.btn {
+  display: inline-block; background: var(--teal); color: #fff; border: 0; cursor: pointer;
+  font: inherit; font-weight: 700; font-size: 0.95rem; text-decoration: none;
+  padding: 10px 18px; border-radius: 10px;
+}
+.btn:hover { background: var(--teal-dark); }
+.link-more { font-weight: 700; }
+
+/* Kartu */
+.card {
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 22px 24px; margin: 18px 0;
+}
+.card-sub { color: var(--muted); font-size: 0.95rem; margin-top: 0; }
+.source { color: var(--faint); font-size: 0.82rem; margin: 10px 0 0; }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0 20px; }
+.chart { overflow-x: auto; }
+.chart svg { display: block; min-width: 420px; }
+
+/* KPI */
+.kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 10px 0 4px; }
+.kpi {
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 16px 18px; border-top: 4px solid var(--teal);
+}
+.kpi:nth-child(4n+2) { border-top-color: var(--amber); }
+.kpi-label { font-size: 0.82rem; font-weight: 700; color: var(--muted); margin: 0; text-transform: uppercase; letter-spacing: 0.04em; }
+.kpi-value { font-size: 1.7rem; font-weight: 800; margin: 4px 0 0; letter-spacing: -0.02em; }
+.kpi-meta { color: var(--muted); font-size: 0.88rem; margin: 2px 0 0; }
+.kpi-src { color: var(--faint); font-size: 0.75rem; margin: 8px 0 0; }
+
+/* Tabel */
+.table-wrap { overflow-x: auto; }
+.data-table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+.data-table th, .data-table td { padding: 9px 10px; border-bottom: 1px solid var(--line); text-align: left; }
+.data-table th { background: #f1f5f9; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.03em; color: var(--muted); }
+.data-table tr:hover td { background: #f8fafc; }
+.num { text-align: right; font-variant-numeric: tabular-nums; }
+
+/* Kontrol */
+.controls { display: flex; gap: 16px; flex-wrap: wrap; align-items: end; margin: 12px 0; }
+.controls label { font-weight: 600; font-size: 0.9rem; color: var(--muted); display: grid; gap: 4px; }
+.controls input, .controls select {
+  font: inherit; padding: 8px 10px; border: 1px solid #cbd5e1; border-radius: 8px;
+  background: #fff; min-width: 220px; color: var(--ink);
+}
+.controls input:focus, .controls select:focus { outline: 2px solid var(--teal); outline-offset: 1px; }
+.seg {
+  font: inherit; font-weight: 700; padding: 8px 14px; border-radius: 999px;
+  border: 1px solid #cbd5e1; background: #fff; color: var(--muted); cursor: pointer;
+}
+.seg:hover { border-color: var(--teal); color: var(--teal); }
+.seg.active { background: var(--teal); border-color: var(--teal); color: #fff; }
+
+/* Daftar statistik dan fakta */
+.stat-list { margin: 0; }
+.stat-list > div { display: grid; grid-template-columns: 1fr auto; gap: 2px 16px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.stat-list dt { font-weight: 600; }
+.stat-list dd { margin: 0; font-weight: 800; font-size: 1.15rem; text-align: right; }
+.stat-list dd.fact-src, .fact-src { font-weight: 400; font-size: 0.8rem; color: var(--faint); }
+.notes { padding-left: 20px; }
+.notes li { margin: 0.5em 0; }
+.facts dl { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 28px; margin: 0; }
+.fact { padding: 10px 0; border-bottom: 1px solid var(--line); }
+.fact dt { font-weight: 600; color: var(--muted); font-size: 0.9rem; }
+.fact dd { margin: 2px 0 0; font-weight: 700; font-size: 1.05rem; }
+.fact dd.fact-src { font-weight: 400; }
+
+/* Footer */
+.site-footer { border-top: 1px solid var(--line); margin-top: 36px; padding: 24px 0 32px; color: var(--muted); font-size: 0.92rem; }
+.foot-note { font-size: 0.82rem; color: var(--faint); }
+
+/* HP */
+@media (max-width: 760px) {
+  h1 { font-size: 1.9rem; }
+  .kpi-grid { grid-template-columns: 1fr 1fr; }
+  .grid-2 { grid-template-columns: 1fr; }
+  .facts dl { grid-template-columns: 1fr; }
+  .header-inner { gap: 8px; }
+  #main-nav a { padding: 6px 7px; font-size: 0.85rem; }
+  .card { padding: 18px; }
+  .controls input, .controls select { min-width: 0; width: 100%; }
+  .controls label { width: 100%; }
+}
